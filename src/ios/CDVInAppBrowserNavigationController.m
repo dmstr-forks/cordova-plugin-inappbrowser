@@ -19,7 +19,10 @@
 
 #import "CDVInAppBrowserNavigationController.h"
 
-#define    STATUSBAR_HEIGHT 20.0
+// Quick fix:
+// Cordova InAppBrowser adds a grey block on orientation change & in normal view
+// https://stackoverflow.com/questions/46663649/ios-11-2-cordova-inappbrowser-adds-a-grey-block-on-orientation-change
+#define    STATUSBAR_HEIGHT 0
 
 @implementation CDVInAppBrowserNavigationController : UINavigationController
 
